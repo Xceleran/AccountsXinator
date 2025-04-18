@@ -303,7 +303,7 @@
         offline-form-invalid-name="The provided name is not valid. Please try again."
         offline-form-maximum-characters-reached="Maximum characters reached"
         offline-form-invalid-email="Hmmm...that doesn't look like an email address. Please try again.?">
-</call-us>
+    </call-us>
 
     <script defer src="https://cdn.3cx.com/livechat/v1/callus.js" id="tcx-callus-js"></script>
 
