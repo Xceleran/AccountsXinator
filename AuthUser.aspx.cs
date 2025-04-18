@@ -34,9 +34,9 @@ namespace Accounts.Xinator
 
                 if (isValidate)
                 {
-                   
+
                     string sRetval = AuthManager.GetCurrentLogin();
-                    
+
                     if (!string.IsNullOrEmpty(sRetval))
                     {
                         string sToken = AuthManager.EncryptString(sKey, sRetval);

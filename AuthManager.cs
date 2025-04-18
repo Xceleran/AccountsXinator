@@ -68,7 +68,7 @@ namespace Accounts.Xinator
 
             //}
 
-            
+
             if (HttpContext.Current.Session["XinatorSSO"] != null)
             {
                 string ssoCookie = HttpContext.Current.Session["XinatorSSO"].ToString();
@@ -82,7 +82,7 @@ namespace Accounts.Xinator
 
         }
 
-        
+
 
         public static string EncryptString(string key, string encryptString)
         {
@@ -101,22 +101,22 @@ namespace Accounts.Xinator
                 {
                     using (CryptoStream cs = new CryptoStream(ms, encryptor.CreateEncryptor(), CryptoStreamMode.Write))
                     {
-                        cs.Write(clearBytes, 0, clearBytes.Length);                      
+                        cs.Write(clearBytes, 0, clearBytes.Length);
                         //cs.Close();
                         cs.FlushFinalBlock();
                     }
                     encryptString = Convert.ToBase64String(ms.ToArray());
-                 
+
                 }
             }
-           
+
             return encryptString;
         }
 
         public string DecryptString(string key, string cipherText)
         {
             string EncryptionKey = key;
-         
+
             // Decode the encoded string.
             cipherText = Uri.UnescapeDataString(cipherText);
 

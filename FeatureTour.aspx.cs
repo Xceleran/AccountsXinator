@@ -35,7 +35,8 @@ namespace Accounts.Xinator
             Response.Redirect(sUrl);
 
         }
-        public void clearCookies() {
+        public void clearCookies()
+        {
 
             //if (Request.Cookies["XinatorSSO"] != null)
             //{
