@@ -1,0 +1,22 @@
+D:\_PROJECTS\_mSF\_NewProjects\_Xinator\Accounts.Xinator\bin\Accounts.Xinator.dll.config
+D:\_PROJECTS\_mSF\_NewProjects\_Xinator\Accounts.Xinator\bin\Accounts.Xinator.dll
+D:\_PROJECTS\_mSF\_NewProjects\_Xinator\Accounts.Xinator\bin\Accounts.Xinator.pdb
+D:\_PROJECTS\_mSF\_NewProjects\_Xinator\Accounts.Xinator\obj\Debug\Accounts.Xinator.csproj.AssemblyReference.cache
+D:\_PROJECTS\_mSF\_NewProjects\_Xinator\Accounts.Xinator\obj\Debug\Accounts.Xinator.csproj.CoreCompileInputs.cache
+D:\_PROJECTS\_mSF\_NewProjects\_Xinator\Accounts.Xinator\obj\Debug\Accounts.Xinator.dll
+D:\_PROJECTS\_mSF\_NewProjects\_Xinator\Accounts.Xinator\obj\Debug\Accounts.Xinator.pdb
+C:\Users\Zahir\Desktop\Z Temp\From Nazifa\TestProject\Accounts.Xinator\bin\Accounts.Xinator.dll.config
+C:\Users\Zahir\Desktop\Z Temp\From Nazifa\TestProject\Accounts.Xinator\bin\Accounts.Xinator.dll
+C:\Users\Zahir\Desktop\Z Temp\From Nazifa\TestProject\Accounts.Xinator\bin\Accounts.Xinator.pdb
+C:\Users\Zahir\Desktop\Z Temp\From Nazifa\TestProject\Accounts.Xinator\obj\Debug\Accounts.Xinator.csproj.AssemblyReference.cache
+C:\Users\Zahir\Desktop\Z Temp\From Nazifa\TestProject\Accounts.Xinator\obj\Debug\Accounts.Xinator.csproj.CoreCompileInputs.cache
+C:\Users\Zahir\Desktop\Z Temp\From Nazifa\TestProject\Accounts.Xinator\obj\Debug\Accounts.Xinator.dll
+C:\Users\Zahir\Desktop\Z Temp\From Nazifa\TestProject\Accounts.Xinator\obj\Debug\Accounts.Xinator.pdb
+C:\Users\USER\Desktop\Test\Accounts.Xinator\bin\Accounts.Xinator.dll.config
+C:\Users\USER\Desktop\Test\Accounts.Xinator\bin\Accounts.Xinator.dll
+C:\Users\USER\Desktop\Test\Accounts.Xinator\bin\Accounts.Xinator.pdb
+C:\Users\USER\Desktop\Test\Accounts.Xinator\obj\Debug\Accounts.Xinator.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\Test\Accounts.Xinator\obj\Debug\Accounts.Xinator.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Test\Accounts.Xinator\obj\Debug\Accounts.Xinator.csproj.CopyComplete
+C:\Users\USER\Desktop\Test\Accounts.Xinator\obj\Debug\Accounts.Xinator.dll
+C:\Users\USER\Desktop\Test\Accounts.Xinator\obj\Debug\Accounts.Xinator.pdb
