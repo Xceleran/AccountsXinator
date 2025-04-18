@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" enableEventValidation="false" CodeBehind="Login.aspx.cs" Inherits="Accounts.Xinator.Login" %>
+<%@ Page Language="C#" AutoEventWireup="true" enableEventValidation="false" CodeBehind="Login.aspx.cs" Inherits="Accounts.Xinator.Login" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -145,7 +145,7 @@
 </div>
               </div>
               <div class="modal-footer">
-                 <asp:Button ID="btn_Save"  ClientIDMode="Static" UseSubmitBehavior="False" runat="server" Text="Submit" class="btn btn-primary" OnClick="btn_Save_Click1" />
+                 <asp:Button ID="btn_Save"  ClientIDMode="Static" UseSubmitBehavior="False" runat="server" Text="Submit" class="btn btn-primary" OnClick="btnLogin_Click" />
        
                        </div>
             </div>
