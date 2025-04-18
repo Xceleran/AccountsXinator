@@ -63,6 +63,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
     <Content Include="AuthUser.aspx" />
     <Content Include="css\all.css" />
@@ -254,6 +255,7 @@
     <Content Include="js\bootstrap\bootstrap.esm.min.js.map" />
     <Content Include="js\bootstrap\bootstrap.js.map" />
     <Content Include="js\bootstrap\bootstrap.min.js.map" />
+    <Content Include=".editorconfig" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
