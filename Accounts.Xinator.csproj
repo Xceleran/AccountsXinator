@@ -142,6 +142,8 @@
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="README.md" />
+    <Content Include="Sql\Data.sql" />
+    <Content Include="Sql\Schema.sql" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
