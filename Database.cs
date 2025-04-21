@@ -2,6 +2,7 @@ using System;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Collections.Generic;
 
 
 public class Database
@@ -477,6 +478,66 @@ public class Database
         }
 
         return true;
+    }
+
+    public DataTable Execute(string sql, IEnumerable<SqlParameter> parameters)
+    {
+        var resultTable = new DataTable();
+
+        try
+        {
+            this.CloseReader();
+            CheckConnnection();
+
+            using (var command = new SqlCommand(sql, this.Connection))
+            {
+                if (parameters != null)
+                {
+                    foreach (var param in parameters)
+                    {
+                        command.Parameters.Add(param);
+                    }
+                }
+
+                using (var reader = command.ExecuteReader())
+                {
+                    resultTable.Load(reader);
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            this.Error = ex;
+            // Optionally, return null or empty table here
+            throw;
+        }
+
+        return resultTable;
+    }
+
+    public int Update(string sql, IEnumerable<SqlParameter> parameters)
+    {
+        try
+        {
+            this.CloseReader();
+            CheckConnnection();
+            this.Command = new SqlCommand(sql, this.Connection);
+
+            if (parameters != null)
+            {
+                foreach (var param in parameters)
+                {
+                    this.Command.Parameters.Add(param);
+                }
+            }
+
+            return this.Command.ExecuteNonQuery();
+        }
+        catch (Exception ex)
+        {
+            this.Error = ex;
+            throw;
+        }
     }
 
     public int Update(string sql)

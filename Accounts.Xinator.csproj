@@ -117,6 +117,7 @@
     <Content Include="FeatureTourPRO.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="ForgotPassword.aspx" />
     <Content Include="img\favicon.ico" />
     <Content Include="img\home\homebg1.jpg" />
     <Content Include="img\home\homebg1old.jpg" />
@@ -143,6 +144,7 @@
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="README.md" />
+    <Content Include="ResetPassword.aspx" />
     <Content Include="Sql\Data.sql" />
     <Content Include="Sql\Schema.sql" />
     <Content Include="Web.config" />
@@ -194,6 +196,13 @@
     <Compile Include="FeatureTourPRO.aspx.designer.cs">
       <DependentUpon>FeatureTourPRO.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="KeepSessionAlive.aspx.cs">
       <DependentUpon>KeepSessionAlive.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -216,6 +225,13 @@
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
