@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+using System;
 using System.Configuration;
 using System.Data;
-using System.Linq;
-using System.Net;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Accounts.Xinator
 {
@@ -47,15 +41,15 @@ namespace Accounts.Xinator
                     //cookie.Expires= DateTime.Now.AddMonths(1);
 
                     //Response.Cookies.Add(cookie);
-                    Session["XinatorSSO"] = sCookieVal;                   
+                    Session["XinatorSSO"] = sCookieVal;
                     string sKey = "";
-                    string redirectUri ="";
+                    string redirectUri = "";
                     string AppName = "";
                     if (Request["lg"] != null)
                     {
                         sKey = ConfigurationManager.AppSettings["CentralToken"].ToString();
-                        redirectUri = ConfigurationManager.AppSettings["LogoutReturnUrl"].ToString()+ "AuthVerify.aspx";
-                        AppName = ConfigurationManager.AppSettings["AppName"].ToString(); 
+                        redirectUri = ConfigurationManager.AppSettings["LogoutReturnUrl"].ToString() + "AuthVerify.aspx";
+                        AppName = ConfigurationManager.AppSettings["AppName"].ToString();
                     }
                     else
                     {
@@ -72,12 +66,12 @@ namespace Accounts.Xinator
                 else
                 {
                     lblError.Text = user.ErrorMessage;
-                    return ;
+                    return;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                sUrl="Error.aspx?msg=Login error";
+                sUrl = "Error.aspx?msg=Login error";
             }
 
             Response.Redirect(sUrl);
@@ -88,7 +82,7 @@ namespace Accounts.Xinator
         //{
         //    User user = null;
 
-       
+
         //    string sql = "";
         //    Database db = new Database();
         //    DataTable dt = new DataTable();
@@ -138,7 +132,7 @@ namespace Accounts.Xinator
                     user.UserID = dr["UserID"].ToString();
                     user.CompanyID = dr["CompanyID"].ToString();
 
-                  
+
                     sql = "Select * from [XinatorCentral].dbo.tbl_Company where " +
                              "CompanyID = @CompanyID ";
 
@@ -178,7 +172,7 @@ namespace Accounts.Xinator
                         else
                         {
                             user.Verified = true;
-                          
+
                         }
 
                         //else
@@ -208,9 +202,9 @@ namespace Accounts.Xinator
 
             return user;
         }
-        public void createLoginCookie(string UserID,string CompanyID)
+        public void createLoginCookie(string UserID, string CompanyID)
         {
-           
+
             //string coockieVal = UserID + "|" + CompanyID;
             //HttpCookie myCookie = new HttpCookie("XinatorSSO");
             //myCookie.Value = coockieVal;

@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+using System;
 using System.Data;
-using System.Linq;
-using System.Web;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
-using System.Configuration;
+using System.Web;
 
 namespace Accounts.Xinator
 {
@@ -68,7 +65,7 @@ namespace Accounts.Xinator
 
             //}
 
-            
+
             if (HttpContext.Current.Session["XinatorSSO"] != null)
             {
                 string ssoCookie = HttpContext.Current.Session["XinatorSSO"].ToString();
@@ -82,7 +79,7 @@ namespace Accounts.Xinator
 
         }
 
-        
+
 
         public static string EncryptString(string key, string encryptString)
         {
@@ -101,22 +98,22 @@ namespace Accounts.Xinator
                 {
                     using (CryptoStream cs = new CryptoStream(ms, encryptor.CreateEncryptor(), CryptoStreamMode.Write))
                     {
-                        cs.Write(clearBytes, 0, clearBytes.Length);                      
+                        cs.Write(clearBytes, 0, clearBytes.Length);
                         //cs.Close();
                         cs.FlushFinalBlock();
                     }
                     encryptString = Convert.ToBase64String(ms.ToArray());
-                 
+
                 }
             }
-           
+
             return encryptString;
         }
 
         public string DecryptString(string key, string cipherText)
         {
             string EncryptionKey = key;
-         
+
             // Decode the encoded string.
             cipherText = Uri.UnescapeDataString(cipherText);
 

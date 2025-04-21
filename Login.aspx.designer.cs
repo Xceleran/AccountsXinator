@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Accounts.Xinator
-{
-
-
-    public partial class Login
-    {
-
+namespace Accounts.Xinator {
+    
+    
+    public partial class Login {
+        
         /// <summary>
         /// form control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace Accounts.Xinator
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form;
-
+        
         /// <summary>
         /// txtcompanyID control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace Accounts.Xinator
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputHidden txtcompanyID;
-
+        
         /// <summary>
         /// lblError control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace Accounts.Xinator
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblError;
-
+        
         /// <summary>
         /// txtUsername control.
         /// </summary>
@@ -49,7 +47,7 @@ namespace Accounts.Xinator
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtUsername;
-
+        
         /// <summary>
         /// txtPassword control.
         /// </summary>
@@ -58,7 +56,7 @@ namespace Accounts.Xinator
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPassword;
-
+        
         /// <summary>
         /// btnLogin control.
         /// </summary>
@@ -67,5 +65,14 @@ namespace Accounts.Xinator
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnLogin;
+        
+        /// <summary>
+        /// btn_Save control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Save;
     }
 }

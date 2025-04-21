@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+using System;
 using System.Configuration;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Accounts.Xinator
 {
@@ -35,7 +30,8 @@ namespace Accounts.Xinator
             Response.Redirect(sUrl);
 
         }
-        public void clearCookies() {
+        public void clearCookies()
+        {
 
             //if (Request.Cookies["XinatorSSO"] != null)
             //{

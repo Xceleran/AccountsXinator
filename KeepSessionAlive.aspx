@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="KeepSessionAlive.aspx.cs" Inherits="Accounts.Xinator.KeepSessionAlive" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="KeepSessionAlive.aspx.cs" Inherits="Accounts.Xinator.KeepSessionAlive" %>
 
 <!DOCTYPE html>
 
@@ -7,7 +7,6 @@
     <title></title>
 
     <meta http-equiv="refresh" content="60">
-
 </head>
 <body>
     <form id="form1" runat="server">

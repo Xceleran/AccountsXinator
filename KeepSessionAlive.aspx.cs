@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System;
 
 namespace Accounts.Xinator
 {
@@ -18,7 +13,7 @@ namespace Accounts.Xinator
                     Response.Write(Session["XinatorSSO"].ToString());
                     Response.Write("<br>");
 
-                    if(Session["LoginTime"] != null)
+                    if (Session["LoginTime"] != null)
                     {
                         Response.Write("Login at: " + Session["LoginTime"].ToString());
 
@@ -27,7 +22,7 @@ namespace Accounts.Xinator
                         Response.Write("<br>");
                         Response.Write("Duration: " + duration.ToString(@"hh\:mm\:ss"));
                     }
-                    
+
                 }
                 else
                 {
