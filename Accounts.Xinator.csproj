@@ -146,6 +146,7 @@
     <Content Include="Sql\Data.sql" />
     <Content Include="Sql\Schema.sql" />
     <Content Include="Web.config" />
+    <Content Include="XSI LICENSE AGREEMENT.htm" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuthManager.cs" />
